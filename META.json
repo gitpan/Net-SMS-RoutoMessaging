@@ -1,0 +1,53 @@
+{
+   "abstract" : "Send SMS messages via the RoutoMessaging HTTP API",
+   "author" : [
+      "Terje Kristensen <terjek@opera.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.200012, CPAN::Meta::Converter version 2.110930",
+   "license" : [
+      "bsd"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Net-SMS-RoutoMessaging",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : 0,
+            "Data::Dumper" : 0,
+            "Digest::MD5" : 0,
+            "IO::Socket::INET" : 0,
+            "LWPx::ParanoidAgent" : 0,
+            "Net::Ping" : 0
+         }
+      },
+      "test" : {
+         "requires" : {
+            "LWP::Online" : 0,
+            "Test::More" : 0
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "mailto" : "bug-net-prober@rt.cpan.org",
+         "web" : "http://rt.cpan.org/NoAuth/Bugs.html?Dist=Net-SMS-RoutoMessaging"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/terjek/net-sms-routomessaging.git",
+         "web" : "http://github.com/terjek/net-sms-routomessaging.git"
+      }
+   },
+   "version" : "0.01"
+}
+
