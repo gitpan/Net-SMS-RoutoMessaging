@@ -12,7 +12,6 @@ my %WriteMakefileArgs = (
   'ABSTRACT' => 'Send SMS messages via the RoutoMessaging HTTP API',
   'AUTHOR' => 'Terje Kristensen <terjek@opera.com>',
   'BUILD_REQUIRES' => {
-    'LWP::Online' => '0',
     'Test::More' => '0'
   },
   'CONFIGURE_REQUIRES' => {
@@ -24,13 +23,9 @@ my %WriteMakefileArgs = (
   'NAME' => 'Net::SMS::RoutoMessaging',
   'PREREQ_PM' => {
     'Carp' => '0',
-    'Data::Dumper' => '0',
-    'Digest::MD5' => '0',
-    'IO::Socket::INET' => '0',
-    'LWPx::ParanoidAgent' => '0',
-    'Net::Ping' => '0'
+    'Data::Dumper' => '0'
   },
-  'VERSION' => '0.01',
+  'VERSION' => '0.02',
   'test' => {
     'TESTS' => 't/*.t'
   }
