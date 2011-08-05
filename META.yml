@@ -19,4 +19,4 @@ requires:
 resources:
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Net-SMS-RoutoMessaging
   repository: git://github.com/terjek/net-sms-routomessaging.git
-version: 0.03
+version: 0.04

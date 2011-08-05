@@ -1,6 +1,6 @@
 package Net::SMS::RoutoMessaging;
 BEGIN {
-  $Net::SMS::RoutoMessaging::VERSION = '0.03';
+  $Net::SMS::RoutoMessaging::VERSION = '0.04';
 }
 
 # ABSTRACT: Send SMS messages via the RoutoMessaging HTTP API
@@ -14,7 +14,7 @@ use LWP::UserAgent;
 
 use constant {
     PROVIDER => "https://smsc5.routotelecom.com/NewSMSsend",
-    TIMEOUT  => 30
+    TIMEOUT  => 10
 };
 
 sub new {
@@ -49,12 +49,13 @@ sub send_sms {
 
     my $res = $resp->content;
 
+    my $return = 1;
     unless ($res =~ /^success/) {
         warn "Failed: $res\n";
-        return 0;
+        $return = 0;
     }
 
-    return 1;
+    return wantarray ? $return : ($return, $res);
 }
 
 1;
@@ -69,7 +70,7 @@ Net::SMS::RoutoMessaging - Send SMS messages via the RoutoMessaging HTTP API
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -84,11 +85,18 @@ version 0.03
       number  => '1234567890',
   );
 
-  if ($sent eq "success") {
+  # If you also want the status message from the provider
+  my ($sent, $status) = $sms->send_sms(
+      message => "All your base are belong to us",
+      number  => '1234567890',
+  );
+
+  if ($sent) {
       # Success, message sent
   }
   else {
       # Something failed
+      warn("Failed : $status");
   }
 
 =head1 DESCRIPTION
