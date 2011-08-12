@@ -23,9 +23,10 @@ my %WriteMakefileArgs = (
   'NAME' => 'Net::SMS::RoutoMessaging',
   'PREREQ_PM' => {
     'Carp' => '0',
-    'Data::Dumper' => '0'
+    'Data::Dumper' => '0',
+    'HTTP::Request::Common' => '0'
   },
-  'VERSION' => '0.05',
+  'VERSION' => '0.06',
   'test' => {
     'TESTS' => 't/*.t'
   }
