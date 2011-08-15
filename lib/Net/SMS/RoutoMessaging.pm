@@ -1,6 +1,6 @@
 package Net::SMS::RoutoMessaging;
 BEGIN {
-  $Net::SMS::RoutoMessaging::VERSION = '0.06';
+  $Net::SMS::RoutoMessaging::VERSION = '0.07';
 }
 
 # ABSTRACT: Send SMS messages via the RoutoMessaging HTTP API
@@ -100,7 +100,7 @@ Net::SMS::RoutoMessaging - Send SMS messages via the RoutoMessaging HTTP API
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 SYNOPSIS
 

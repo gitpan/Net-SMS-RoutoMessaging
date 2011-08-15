@@ -24,9 +24,10 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'Carp' => '0',
     'Data::Dumper' => '0',
-    'HTTP::Request::Common' => '0'
+    'HTTP::Request::Common' => '0',
+    'LWP::UserAgent' => '0'
   },
-  'VERSION' => '0.06',
+  'VERSION' => '0.07',
   'test' => {
     'TESTS' => 't/*.t'
   }

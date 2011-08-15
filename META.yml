@@ -17,7 +17,8 @@ requires:
   Carp: 0
   Data::Dumper: 0
   HTTP::Request::Common: 0
+  LWP::UserAgent: 0
 resources:
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Net-SMS-RoutoMessaging
   repository: git://github.com/terjek/net-sms-routomessaging.git
-version: 0.06
+version: 0.07
