@@ -4,7 +4,7 @@
       "Terje Kristensen <terjek@opera.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200012, CPAN::Meta::Converter version 2.110930",
+   "generated_by" : "Dist::Zilla version 4.300020, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "bsd"
    ],
@@ -21,15 +21,15 @@
       },
       "runtime" : {
          "requires" : {
-            "Carp" : 0,
-            "Data::Dumper" : 0,
-            "HTTP::Request::Common" : 0,
-            "LWP::UserAgent" : 0
+            "Carp" : "0",
+            "Data::Dumper" : "0",
+            "HTTP::Request::Common" : "0",
+            "LWP::UserAgent" : "0"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : 0
+            "Test::More" : "0"
          }
       }
    },
@@ -45,6 +45,6 @@
          "web" : "http://github.com/terjek/net-sms-routomessaging.git"
       }
    },
-   "version" : "0.07"
+   "version" : "0.08"
 }
 

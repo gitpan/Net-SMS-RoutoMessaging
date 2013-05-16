@@ -9,27 +9,27 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Send SMS messages via the RoutoMessaging HTTP API',
-  'AUTHOR' => 'Terje Kristensen <terjek@opera.com>',
-  'BUILD_REQUIRES' => {
-    'Test::More' => '0'
+  "ABSTRACT" => "Send SMS messages via the RoutoMessaging HTTP API",
+  "AUTHOR" => "Terje Kristensen <terjek\@opera.com>",
+  "BUILD_REQUIRES" => {
+    "Test::More" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Net-SMS-RoutoMessaging',
-  'EXE_FILES' => [],
-  'LICENSE' => 'bsd',
-  'NAME' => 'Net::SMS::RoutoMessaging',
-  'PREREQ_PM' => {
-    'Carp' => '0',
-    'Data::Dumper' => '0',
-    'HTTP::Request::Common' => '0',
-    'LWP::UserAgent' => '0'
+  "DISTNAME" => "Net-SMS-RoutoMessaging",
+  "EXE_FILES" => [],
+  "LICENSE" => "bsd",
+  "NAME" => "Net::SMS::RoutoMessaging",
+  "PREREQ_PM" => {
+    "Carp" => 0,
+    "Data::Dumper" => 0,
+    "HTTP::Request::Common" => 0,
+    "LWP::UserAgent" => 0
   },
-  'VERSION' => '0.07',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.08",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

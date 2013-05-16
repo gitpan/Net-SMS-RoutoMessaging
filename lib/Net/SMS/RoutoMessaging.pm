@@ -1,6 +1,6 @@
 package Net::SMS::RoutoMessaging;
-BEGIN {
-  $Net::SMS::RoutoMessaging::VERSION = '0.07';
+{
+  $Net::SMS::RoutoMessaging::VERSION = '0.08';
 }
 
 # ABSTRACT: Send SMS messages via the RoutoMessaging HTTP API
@@ -13,7 +13,7 @@ use HTTP::Request::Common;
 use LWP::UserAgent;
 
 use constant {
-    PROVIDER => "https://smsc5.routotelecom.com/NewSMSsend",
+    PROVIDER => "https://smsc5.telesignmobile.com/NewSMSsend",
     TIMEOUT  => 10
 };
 
@@ -100,7 +100,7 @@ Net::SMS::RoutoMessaging - Send SMS messages via the RoutoMessaging HTTP API
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 SYNOPSIS
 
